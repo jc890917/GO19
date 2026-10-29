@@ -4,8 +4,10 @@ Data, input files and scripts supporting:
 
 > Angel-Lerma LE, Contreras-Montoya E, González-Escobedo R, Moncayo-Luján R, Barraza-Guerrero SI and Carrillo-Campos J (2026). **Structural and evolutionary basis of glyphosate specificity in a naturally occurring glyphosate oxidoreductase.** *Frontiers in Chemical Biology* 5:1996804. doi: 10.3389/fchbi.2026.1996804
 
-Archived version (Zenodo): https://doi.org/10.5281/zenodo.XXXXXXX
-Molecular dynamics trajectories (Zenodo, separate record): https://doi.org/10.5281/zenodo.YYYYYYY
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23754903.svg)](https://doi.org/10.5281/zenodo.23754903)
+
+Archived on Zenodo — cite all versions: https://doi.org/10.5281/zenodo.23754903 (v1.0: https://doi.org/10.5281/zenodo.23754904)
+Molecular dynamics trajectories (Zenodo, separate record): DOI to be added
 
 GO19 sequences: GenBank PQ065997 (nucleotide) and XER92051 (protein).
 

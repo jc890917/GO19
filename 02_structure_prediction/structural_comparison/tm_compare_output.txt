@@ -1,0 +1,43 @@
+{'A': 'GO19_m0', 'B': '1RYI_A', 'lenA': 384, 'lenB': 364, 'TM_normA': 0.88, 'TM_normB': 0.927, 'RMSD': 1.88, 'aligned': 357, 'seqid_aligned': 26.3}
+{'A': 'GO19_m0', 'B': '1RYI_B', 'lenA': 384, 'lenB': 364, 'TM_normA': 0.879, 'TM_normB': 0.925, 'RMSD': 1.92, 'aligned': 357, 'seqid_aligned': 26.3}
+{'A': 'GO19_m0', 'B': '1RYI_C', 'lenA': 384, 'lenB': 364, 'TM_normA': 0.881, 'TM_normB': 0.927, 'RMSD': 1.87, 'aligned': 357, 'seqid_aligned': 26.3}
+{'A': 'GO19_m0', 'B': '1RYI_D', 'lenA': 384, 'lenB': 364, 'TM_normA': 0.879, 'TM_normB': 0.926, 'RMSD': 1.91, 'aligned': 357, 'seqid_aligned': 26.6}
+{'A': 'GO19_m0', 'B': '1NG4_A', 'lenA': 384, 'lenB': 364, 'TM_normA': 0.88, 'TM_normB': 0.926, 'RMSD': 1.9, 'aligned': 357, 'seqid_aligned': 26.6}
+{'A': 'GO19_m0', 'B': 'GO_Bcereus', 'lenA': 384, 'lenB': 369, 'TM_normA': 0.886, 'TM_normB': 0.92, 'RMSD': 2.06, 'aligned': 363, 'seqid_aligned': 26.4}
+{'A': 'GO19_m0', 'B': 'GO_Blicheniformis', 'lenA': 384, 'lenB': 369, 'TM_normA': 0.888, 'TM_normB': 0.922, 'RMSD': 1.97, 'aligned': 362, 'seqid_aligned': 29.0}
+{'A': 'GO19_m0', 'B': 'GOW_Chryseobacterium', 'lenA': 384, 'lenB': 508, 'TM_normA': 0.812, 'TM_normB': 0.626, 'RMSD': 2.83, 'aligned': 350, 'seqid_aligned': 16.3}
+{'A': 'GO19_m0', 'B': 'GOX_Caballeronia', 'lenA': 384, 'lenB': 408, 'TM_normA': 0.846, 'TM_normB': 0.799, 'RMSD': 2.32, 'aligned': 354, 'seqid_aligned': 22.6}
+{'A': 'GO19_m0', 'B': 'GOX_Ochrobactrum', 'lenA': 384, 'lenB': 431, 'TM_normA': 0.852, 'TM_normB': 0.765, 'RMSD': 2.63, 'aligned': 362, 'seqid_aligned': 22.7}
+{'A': 'GO19_m0', 'B': 'GO19_m1', 'lenA': 384, 'lenB': 384, 'TM_normA': 0.998, 'TM_normB': 0.998, 'RMSD': 0.3, 'aligned': 384, 'seqid_aligned': 100.0}
+{'A': 'GO19_m0', 'B': 'GO19_m2', 'lenA': 384, 'lenB': 384, 'TM_normA': 0.999, 'TM_normB': 0.999, 'RMSD': 0.28, 'aligned': 384, 'seqid_aligned': 100.0}
+{'A': 'GO19_m0', 'B': 'GO19_m3', 'lenA': 384, 'lenB': 384, 'TM_normA': 0.998, 'TM_normB': 0.998, 'RMSD': 0.31, 'aligned': 384, 'seqid_aligned': 100.0}
+{'A': 'GO19_m0', 'B': 'GO19_m4', 'lenA': 384, 'lenB': 384, 'TM_normA': 0.999, 'TM_normB': 0.999, 'RMSD': 0.23, 'aligned': 384, 'seqid_aligned': 100.0}
+{'A': '1RYI_A', 'B': '1RYI_B', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.999, 'TM_normB': 0.999, 'RMSD': 0.22, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': '1RYI_A', 'B': '1RYI_C', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.998, 'TM_normB': 0.998, 'RMSD': 0.31, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': '1RYI_A', 'B': '1RYI_D', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.997, 'TM_normB': 0.997, 'RMSD': 0.42, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': '1RYI_B', 'B': '1RYI_C', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.997, 'TM_normB': 0.997, 'RMSD': 0.37, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': '1RYI_B', 'B': '1RYI_D', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.997, 'TM_normB': 0.997, 'RMSD': 0.39, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': '1RYI_C', 'B': '1RYI_D', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.995, 'TM_normB': 0.995, 'RMSD': 0.5, 'aligned': 364, 'seqid_aligned': 100.0}
+{'A': 'GO_Bcereus', 'B': '1RYI_A', 'lenA': 369, 'lenB': 364, 'TM_normA': 0.933, 'TM_normB': 0.945, 'RMSD': 1.89, 'aligned': 363, 'seqid_aligned': 33.6}
+{'A': 'GO_Blicheniformis', 'B': '1RYI_A', 'lenA': 369, 'lenB': 364, 'TM_normA': 0.967, 'TM_normB': 0.98, 'RMSD': 1.02, 'aligned': 364, 'seqid_aligned': 62.1}
+{'A': 'GOW_Chryseobacterium', 'B': '1RYI_A', 'lenA': 508, 'lenB': 364, 'TM_normA': 0.628, 'TM_normB': 0.86, 'RMSD': 2.4, 'aligned': 343, 'seqid_aligned': 18.4}
+{'A': 'GOX_Caballeronia', 'B': '1RYI_A', 'lenA': 408, 'lenB': 364, 'TM_normA': 0.793, 'TM_normB': 0.883, 'RMSD': 2.3, 'aligned': 350, 'seqid_aligned': 18.3}
+{'A': 'GOX_Ochrobactrum', 'B': '1RYI_A', 'lenA': 431, 'lenB': 364, 'TM_normA': 0.757, 'TM_normB': 0.887, 'RMSD': 2.44, 'aligned': 354, 'seqid_aligned': 20.9}
+{'A': '1NG4_A', 'B': '1RYI_A', 'lenA': 364, 'lenB': 364, 'TM_normA': 0.998, 'TM_normB': 0.998, 'RMSD': 0.33, 'aligned': 364, 'seqid_aligned': 99.7}
+
+GO19 AF3 confidences
+0 pTM 0.96 ipTM 0.98 rank 0.98 clash 0.0 disord 0.0 pLDDT mean 97.6 >90 98.4% <70 0.0% low-res idx []
+1 pTM 0.96 ipTM 0.98 rank 0.98 clash 0.0 disord 0.0 pLDDT mean 97.6 >90 98.7% <70 0.0% low-res idx []
+2 pTM 0.96 ipTM 0.98 rank 0.98 clash 0.0 disord 0.0 pLDDT mean 97.6 >90 99.0% <70 0.0% low-res idx []
+3 pTM 0.96 ipTM 0.98 rank 0.98 clash 0.0 disord 0.0 pLDDT mean 97.6 >90 99.0% <70 0.0% low-res idx []
+4 pTM 0.96 ipTM 0.98 rank 0.97 clash 0.0 disord 0.0 pLDDT mean 97.6 >90 99.0% <70 0.0% low-res idx []
+protein_raw.pdb vs model_0: max CA deviation (no fit) 0.000 A
+protein_raw.pdb vs model_1: max CA deviation (no fit) 34.795 A
+protein_raw.pdb vs model_2: max CA deviation (no fit) 46.009 A
+protein_raw.pdb vs model_3: max CA deviation (no fit) 49.927 A
+protein_raw.pdb vs model_4: max CA deviation (no fit) 40.443 A
+FAD vs 1RYI_A: 53 matched heavy atoms, RMSD 0.79 A (no refit); isoalloxazine 18 atoms RMSD 0.72 A; N5 shift 0.63 A
+FAD vs 1RYI_B: 53 matched heavy atoms, RMSD 0.79 A (no refit); isoalloxazine 18 atoms RMSD 0.73 A; N5 shift 0.62 A
+FAD vs 1RYI_C: 53 matched heavy atoms, RMSD 0.76 A (no refit); isoalloxazine 18 atoms RMSD 0.68 A; N5 shift 0.55 A
+FAD vs 1RYI_D: 53 matched heavy atoms, RMSD 0.79 A (no refit); isoalloxazine 18 atoms RMSD 0.73 A; N5 shift 0.61 A
+GO19 residues with no 1RYI counterpart: [97, 98, 99, 110, 114, 116, 117, 118, 119, 122, 123, 124, 125, 189, 245, 246, 254, 277, 375, 376, 378, 379, 380, 381, 382, 383, 384]

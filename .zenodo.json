@@ -1,0 +1,19 @@
+{
+  "title": "GO19 glyphosate oxidoreductase: structural models, docking, molecular dynamics inputs, analysis outputs and scripts",
+  "upload_type": "dataset",
+  "description": "<p>Data, input files and scripts supporting Angel-Lerma et al. (2026), <i>Structural and evolutionary basis of glyphosate specificity in a naturally occurring glyphosate oxidoreductase</i>, Frontiers in Chemical Biology 5:1996804. Includes AlphaFold 3 models, GNINA docking inputs and poses, glyphosate parameters, GROMACS/AMBER inputs for the wild-type, R53A, R272L and R53A/R272L systems, per-replicate MD analysis outputs, MM-GBSA results, and phylogenetic and conservation data.</p>",
+  "creators": [
+    {"name": "Angel-Lerma, Lidia Esmeralda", "affiliation": "Facultad de Ciencias Químicas, Universidad Autónoma de Chihuahua"},
+    {"name": "Contreras-Montoya, Efrain", "affiliation": "Universidad Politécnica de Gómez Palacio"},
+    {"name": "González-Escobedo, Román", "affiliation": "Facultad de Zootecnia y Ecología, Universidad Autónoma de Chihuahua"},
+    {"name": "Moncayo-Luján, Rosario", "affiliation": "Universidad Politécnica de Gómez Palacio"},
+    {"name": "Barraza-Guerrero, Sergio Iván", "affiliation": "Universidad Autónoma Agraria Antonio Narro"},
+    {"name": "Carrillo-Campos, Javier", "affiliation": "Facultad de Zootecnia y Ecología, Universidad Autónoma de Chihuahua"}
+  ],
+  "keywords": ["glyphosate", "glyphosate oxidoreductase", "glycine oxidase", "flavoenzymes", "molecular dynamics", "MM-GBSA", "AlphaFold 3", "phylogenetics"],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {"identifier": "10.3389/fchbi.2026.1996804", "relation": "isSupplementTo", "scheme": "doi", "resource_type": "publication-article"}
+  ]
+}

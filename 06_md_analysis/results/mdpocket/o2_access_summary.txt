@@ -1,0 +1,16 @@
+system       thr flav pts maxf@C4a same/opp face comp V Å3  ↔LIG max expo n expo≥.25
+WT           0.3       16     0.84     16/0           1574   yes     0.47        363
+WT           0.5        7     0.84      7/0            461   yes     0.32         64
+WT           0.8        1     0.84      1/0             91   yes     0.08          0
+R53A         0.3       16     0.80     16/0           1625   yes     0.50        376
+R53A         0.5        9     0.80      9/0            665   yes     0.33         73
+R53A         0.8        2     0.80      2/0            183   yes     0.25          2
+R272L        0.3       25     0.97     25/0           1744   yes     0.47        445
+R272L        0.5       17     0.97     17/0            767   yes     0.35        148
+R272L        0.8        7     0.97      7/0            177   yes     0.25         11
+R53A/R272L   0.3       22     0.92     22/0           1499   yes     0.45        238
+R53A/R272L   0.5       14     0.92     14/0            472   yes     0.32         33
+R53A/R272L   0.8        3     0.92      3/0            140   yes     0.23          0
+
+flav pts = cavity grid points ≤4.5 Å from FAD C4a(C4X)/N5 at that frequency threshold; maxf@C4a = highest cavity frequency anywhere ≤4.5 Å of C4a/N5;
+comp = cavity region (26-connected) containing those points; ↔LIG = whether it also touches glyphosate; expo = fraction of rays escaping 20 Å (≥0.25 ≈ solvent mouth).

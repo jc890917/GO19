@@ -1,0 +1,3 @@
+fase,n_frames,pct_H4_mas_cerca,pct_H5_mas_cerca,dist_C_N5_mean_A,dist_C_N5_sd_A,dist_C_N5_min_A,dist_closerH_N5_mean_A,dist_closerH_N5_sd_A,dist_closerH_N5_min_A,angle_C_H_N5_mean_deg,angle_C_H_N5_sd_deg
+full_trajectory,10001,86.1,13.9,3.493,0.271,2.816,2.941,0.345,2.117,112.7,13.4
+equilibrated (>= 20.0 ns),8001,87.4,12.6,3.505,0.274,2.837,2.941,0.343,2.117,113.6,13.5

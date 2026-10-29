@@ -1,0 +1,50 @@
+Receptor : go19_receptor_fixed.pdb   FAD N5 = -2.857 1.645 4.710
+Ligand   : glifosato_m2.sdf (net -2)
+
+RANK-1 POSE OF EVERY SEED  (--flexres A:257, corrected ligand)
+seed       CNN    aff   C-N5  C-C4X   H-N5  C-H..N5   P-N5  RMSDref  Y257OH  minClash  verdict
+42      0.5516  -4.52   9.03   8.08   8.87     95.0   8.68     6.23   0.014      2.89  decoy
+43      0.5438  -5.10   8.92   7.98   8.72     97.0   8.95     6.62   0.024      2.82  decoy
+101     0.9255  -4.36   3.73   3.76   3.29    105.1   6.54     2.41   0.117      2.79  CATALYTIC
+102     0.8674  -4.40   3.48   3.67   2.60    137.9   7.15     0.00   0.045      2.80  CATALYTIC
+202     0.7943  -4.41   3.41   3.69   2.52    137.5   6.39     1.86   0.089      2.86  CATALYTIC
+203     0.5462  -5.05   8.90   7.96   8.64    100.2   9.08     6.59   0.886      2.71  decoy
+303     0.9079  -4.50   3.49   3.71   2.56    143.5   7.06     1.60   0.131      2.80  CATALYTIC
+304     0.5691  -4.53   9.06   8.11   8.94     92.7   8.80     6.17   0.025      2.92  decoy
+404     0.8427  -4.46   3.64   3.91   3.06    113.9   6.57     1.56   0.136      2.80  CATALYTIC
+405     0.7519  -4.74   3.51   3.70   2.60    140.4   6.15     2.26   0.043      2.80  CATALYTIC
+
+CNN>=0.70 : 6/10 seeds, ALL catalytic
+CNN<=0.60 : 4/10 seeds, NONE catalytic
+gap       : 0.7519 vs 0.5691
+
+CONSENSUS ENSEMBLE (the 6 catalytic rank-1 poses):
+  C(react)-N5    3.54 +/- 0.12  A   range 3.41-3.73
+  C(react)-C4X   3.74 +/- 0.09  A
+  H...N5         2.77 +/- 0.32  A  (H rebuilt tetrahedrally)
+  C-H...N5 angle 129.71 +/- 16.04  deg
+  P-N5           6.65 +/- 0.39  A
+  Y257 OH shift  0.09 +/- 0.04  A
+  pairwise RMSD  1.97 +/- 0.37  A   range 1.37-2.64
+
+PHOSPHONATE PARTNER IN EACH CATALYTIC RANK-1 POSE (<=3.5 A, polar)
+  seed101  ARG272:NH2 2.89
+  seed102  NONE
+  seed202  NONE
+  seed303  ARG272:NH2 3.00
+  seed404  NONE
+  seed405  FAD1:N3 3.14, PRO341:O 3.20
+
+R53 NH1/NH2/NE distance to nearest phosphonate O, catalytic rank-1 poses
+  seed101   ARG53:NH1 5.75 A
+  seed102   ARG53:NH1 5.23 A
+  seed202   ARG53:NH1 6.16 A
+  seed303   ARG53:NH1 5.03 A
+  seed404   ARG53:NH1 5.85 A
+  seed405   ARG53:NH1 7.41 A
+
+DECOY SEEDS - where the rank-1 pose actually binds
+  seed42    C-N5 9.03 A  CNN 0.5516  contacts: ASN51,PRO48,SER47,THR345
+  seed43    C-N5 8.92 A  CNN 0.5438  contacts: GLN91,PRO48,SER251,SER47,THR345,THR50
+  seed203   C-N5 8.90 A  CNN 0.5462  contacts: GLN91,PRO48,SER251,SER47,THR345,THR50
+  seed304   C-N5 9.06 A  CNN 0.5691  contacts: ASN51,PRO48,SER47,THR345

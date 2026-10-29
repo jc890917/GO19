@@ -1,0 +1,525 @@
+
+══════════════════════════════════════════════════
+  Step 05 — Build solvated system with tleap
+══════════════════════════════════════════════════
+  Checking required input files...
+  ✓ Found: protein_clean.pdb
+  ✓ Found: FAD_bcc.mol2
+  ✓ Found: FAD.frcmod
+  ✓ Found: LIG.mol2
+  ✓ Found: LIG.frcmod
+
+  Pass 1 -- counting water molecules for ion calculation...
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/prep to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd to search path.
+-f: Source tleap_pre.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./tleap_pre.in
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.protein.ff19SB
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.protein.ff19SB done
+Log file: ./leap.log
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/parm19.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA + ff19SB
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ff19SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff19SB AA-specific backbone CMAPs for protein 07/25/2019
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/amino19.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/aminoct12.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/aminont12.lib
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.gaff2
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.water.opc
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.water.opc done
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/atomic_ions.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/solvents.lib
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.opc
+Reading force field modification type file (frcmod)
+Reading title:
+Parameters for OPC water (JPCL, 2014, 5 (21), pp 3863–3871) 
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ionsjc_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP4P/EW water from Joung & Cheatham JPCB (2008)
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ions234lm_126_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP4P/EW water model (12-6 normal usage set)
+Loading parameters: ./LIG.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ./LIG.mol2
+Reading MOLECULE named LIG
+Loading parameters: ./FAD.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ./FAD_bcc.mol2
+Reading MOLECULE named FAD
+Loading PDB file: ./protein_clean.pdb
+  total atoms in file: 2858
+  Leap added 2854 missing atoms according to residue templates:
+       2854 H / lone pairs
+  Solute vdw bounding box:              68.104 55.994 58.899
+  Total bounding box for atom centers:  92.104 79.994 82.899
+  Solvent unit box:                     18.865 18.478 19.006
+  Total vdw box size:                   95.595 83.255 86.224 angstroms.
+  Volume: 686234.645 A^3 
+  Total mass 344666.430 amu,  Density 0.834 g/cc
+  Added 16827 residues.
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+  Waters in box : 16827
+  NaCl pairs for 0.15 M : 45
+
+  Pass 2 -- writing tleap.in with correct ion counts...
+  ✓ tleap.in written.
+
+  Running tleap...
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/prep to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm to search path.
+-I: Adding /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd to search path.
+-f: Source tleap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./tleap.in
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.protein.ff19SB
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.protein.ff19SB done
+Log file: ./leap.log
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/parm19.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA + ff19SB
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ff19SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff19SB AA-specific backbone CMAPs for protein 07/25/2019
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/amino19.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/aminoct12.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/aminont12.lib
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.gaff2
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.gaff2 done
+Log file: ./leap.log
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/gaff2.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 2.11, May 2016)
+----- Source: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.water.opc
+----- Source of /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/cmd/leaprc.water.opc done
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/atomic_ions.lib
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/solvents.lib
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.opc
+Reading force field modification type file (frcmod)
+Reading title:
+Parameters for OPC water (JPCL, 2014, 5 (21), pp 3863–3871) 
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ionsjc_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP4P/EW water from Joung & Cheatham JPCB (2008)
+Loading parameters: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/parm/frcmod.ions234lm_126_tip4pew
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP4P/EW water model (12-6 normal usage set)
+Loading parameters: ./LIG.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ./LIG.mol2
+Reading MOLECULE named LIG
+Checking 'LIG'....
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+The unperturbed charge of the unit (-1.999001) is not zero.
+Checking parameters for unit 'LIG'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 1
+Unit is OK.
+Loading parameters: ./FAD.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ./FAD_bcc.mol2
+Reading MOLECULE named FAD
+Checking 'FAD'....
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+The unperturbed charge of the unit (-2.002999) is not zero.
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.490445 angstroms between .R<FAD 1>.A<H62A 65> and .R<FAD 1>.A<H61A 66>
+Checking parameters for unit 'FAD'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 2
+Unit is OK.
+Loading PDB file: ./protein_clean.pdb
+  total atoms in file: 2858
+  Leap added 2854 missing atoms according to residue templates:
+       2854 H / lone pairs
+Checking 'PROT'....
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+The unperturbed charge of the unit (-4.000000) is not zero.
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.022464 angstroms between .R<ILE 11>.A<H 2> and .R<THR 39>.A<HG1 12>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.362763 angstroms between .R<TRP 58>.A<HE1 12> and .R<THR 342>.A<HG1 12>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 0.943770 angstroms between .R<HIE 339>.A<HE2 13> and .R<SER 350>.A<HG 9>
+Checking parameters for unit 'PROT'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 4
+Unit is OK.
+Checking 'COMPLEX'....
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+The unperturbed charge of the unit (-8.002000) is not zero.
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 0.943770 angstroms between .R<SER 350>.A<HG 9> and .R<HIE 339>.A<HE2 13>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.362763 angstroms between .R<THR 342>.A<HG1 12> and .R<TRP 58>.A<HE1 12>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.022464 angstroms between .R<THR 39>.A<HG1 12> and .R<ILE 11>.A<H 2>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.490445 angstroms between .R<FAD 385>.A<H61A 66> and .R<FAD 385>.A<H62A 65>
+Checking parameters for unit 'COMPLEX'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 5
+Unit is OK.
+Total unperturbed charge:  -8.002000
+Total perturbed charge:    -8.002000
+  Solute vdw bounding box:              68.104 55.994 58.899
+  Total bounding box for atom centers:  92.104 79.994 82.899
+  Solvent unit box:                     18.865 18.478 19.006
+  Total vdw box size:                   95.595 83.255 86.224 angstroms.
+  Volume: 686234.645 A^3 
+  Total mass 344666.430 amu,  Density 0.834 g/cc
+  Added 16827 residues.
+8 Na+ ions required to neutralize.
+Adding 8 counter ions to "COMPLEX". 16819 solvent molecules will remain.
+0: Placed Na+ in COMPLEX at (9.76, -20.52, 23.09).
+0: Placed Na+ in COMPLEX at (-11.51, -16.29, -26.52).
+0: Placed Na+ in COMPLEX at (32.56, 6.82, -18.50).
+0: Placed Na+ in COMPLEX at (-27.41, 5.37, -16.39).
+0: Placed Na+ in COMPLEX at (-2.30, -5.40, 28.63).
+0: Placed Na+ in COMPLEX at (34.91, 1.11, -37.37).
+0: Placed Na+ in COMPLEX at (-3.77, -19.44, -28.11).
+0: Placed Na+ in COMPLEX at (37.54, 38.36, -38.31).
+Adding 90 counter ions to "COMPLEX". 16729 solvent molecules will remain.
+0: Placed Na+ in COMPLEX at (39.59, 11.15, 4.86).
+Placed Cl- in COMPLEX at (16.31, 30.33, -12.13).
+0: Placed Na+ in COMPLEX at (2.42, 16.16, 36.27).
+Placed Cl- in COMPLEX at (-5.09, 34.95, -3.16).
+0: Placed Na+ in COMPLEX at (-15.65, -15.32, -37.85).
+Placed Cl- in COMPLEX at (-1.69, -36.56, 31.77).
+0: Placed Na+ in COMPLEX at (17.89, 23.93, -29.98).
+Placed Cl- in COMPLEX at (45.20, -10.01, 10.25).
+0: Placed Na+ in COMPLEX at (-6.14, -30.21, 41.33).
+Placed Cl- in COMPLEX at (-43.34, -26.01, 0.32).
+0: Placed Na+ in COMPLEX at (-38.56, -15.06, -23.34).
+Placed Cl- in COMPLEX at (10.89, 38.04, 37.69).
+0: Placed Na+ in COMPLEX at (-3.63, -18.52, 24.70).
+Placed Cl- in COMPLEX at (-25.21, 38.06, 40.03).
+0: Placed Na+ in COMPLEX at (5.64, 35.96, -19.20).
+Placed Cl- in COMPLEX at (0.59, -19.12, 14.27).
+0: Placed Na+ in COMPLEX at (-16.68, -19.11, 11.95).
+Placed Cl- in COMPLEX at (0.59, -37.60, -4.73).
+0: Placed Na+ in COMPLEX at (-13.53, -6.27, -17.69).
+Placed Cl- in COMPLEX at (-1.63, -23.83, -6.67).
+0: Placed Na+ in COMPLEX at (-30.37, 20.66, 30.50).
+Placed Cl- in COMPLEX at (26.22, 39.14, 11.49).
+0: Placed Na+ in COMPLEX at (-14.20, -10.12, -19.48).
+Placed Cl- in COMPLEX at (35.74, 24.56, -33.06).
+0: Placed Na+ in COMPLEX at (22.02, -4.85, 28.64).
+Placed Cl- in COMPLEX at (-34.98, 11.50, -11.35).
+0: Placed Na+ in COMPLEX at (5.64, 35.96, 18.81).
+Placed Cl- in COMPLEX at (-39.94, -14.52, -35.10).
+0: Placed Na+ in COMPLEX at (-29.89, -21.14, 10.86).
+Placed Cl- in COMPLEX at (-22.09, 28.67, -7.40).
+0: Placed Na+ in COMPLEX at (-42.27, 3.42, 1.14).
+Placed Cl- in COMPLEX at (-17.30, 26.72, -14.77).
+0: Placed Na+ in COMPLEX at (-36.15, 18.46, 8.60).
+Placed Cl- in COMPLEX at (24.51, -19.47, -19.20).
+0: Placed Na+ in COMPLEX at (-8.98, 22.05, -19.63).
+Placed Cl- in COMPLEX at (-29.51, 11.93, -35.72).
+0: Placed Na+ in COMPLEX at (-25.60, -9.84, -0.95).
+Placed Cl- in COMPLEX at (6.55, 24.90, -17.45).
+0: Placed Na+ in COMPLEX at (26.53, -36.07, -11.03).
+Placed Cl- in COMPLEX at (-11.87, -35.99, -4.92).
+0: Placed Na+ in COMPLEX at (-13.53, 12.21, 39.33).
+Placed Cl- in COMPLEX at (33.50, 21.39, -31.70).
+0: Placed Na+ in COMPLEX at (40.93, 24.78, 19.77).
+Placed Cl- in COMPLEX at (-29.94, 24.41, 12.88).
+0: Placed Na+ in COMPLEX at (-34.56, 27.22, 26.56).
+Placed Cl- in COMPLEX at (-25.60, -9.84, 37.07).
+0: Placed Na+ in COMPLEX at (31.59, -30.21, -15.68).
+Placed Cl- in COMPLEX at (-18.40, 21.35, -32.09).
+0: Placed Na+ in COMPLEX at (-4.68, 36.00, -34.98).
+Placed Cl- in COMPLEX at (7.44, 30.10, 12.81).
+0: Placed Na+ in COMPLEX at (-29.51, 30.40, -16.71).
+Placed Cl- in COMPLEX at (-20.83, 21.37, 26.69).
+0: Placed Na+ in COMPLEX at (25.42, -6.98, 15.71).
+Placed Cl- in COMPLEX at (17.53, 15.76, -28.54).
+0: Placed Na+ in COMPLEX at (-33.00, -15.87, 25.86).
+Placed Cl- in COMPLEX at (18.29, 7.83, -35.59).
+0: Placed Na+ in COMPLEX at (-15.75, -31.88, -12.27).
+Placed Cl- in COMPLEX at (41.38, 35.75, -32.60).
+0: Placed Na+ in COMPLEX at (-34.62, 23.56, 6.73).
+Placed Cl- in COMPLEX at (-7.18, -12.45, 14.67).
+0: Placed Na+ in COMPLEX at (-30.23, -27.03, -30.01).
+Placed Cl- in COMPLEX at (29.09, -20.83, -38.18).
+0: Placed Na+ in COMPLEX at (-12.12, -17.85, -16.75).
+Placed Cl- in COMPLEX at (1.86, -25.81, 23.86).
+0: Placed Na+ in COMPLEX at (27.52, -15.75, -32.40).
+Placed Cl- in COMPLEX at (4.66, -9.03, 35.00).
+0: Placed Na+ in COMPLEX at (-26.20, 33.28, -40.27).
+Placed Cl- in COMPLEX at (-36.71, -22.93, 12.86).
+0: Placed Na+ in COMPLEX at (-29.73, 37.66, 18.70).
+Placed Cl- in COMPLEX at (-44.67, 15.08, -28.08).
+0: Placed Na+ in COMPLEX at (-37.65, -26.64, -30.24).
+Placed Cl- in COMPLEX at (18.94, 10.32, -30.24).
+0: Placed Na+ in COMPLEX at (-10.05, -8.43, -33.54).
+Placed Cl- in COMPLEX at (-40.87, 1.92, -22.95).
+0: Placed Na+ in COMPLEX at (-29.94, 5.94, 31.89).
+Placed Cl- in COMPLEX at (40.88, 32.11, -9.37).
+0: Placed Na+ in COMPLEX at (-8.61, -26.25, 26.17).
+Placed Cl- in COMPLEX at (-34.48, 25.97, 11.74).
+0: Placed Na+ in COMPLEX at (43.37, 35.96, -38.21).
+Placed Cl- in COMPLEX at (38.63, -6.32, 20.52).
+0: Placed Na+ in COMPLEX at (-26.05, -22.89, 39.36).
+Placed Cl- in COMPLEX at (33.01, -3.15, -17.92).
+0: Placed Na+ in COMPLEX at (-14.97, -4.57, -39.14).
+Placed Cl- in COMPLEX at (13.24, 22.85, -26.37).
+0: Placed Na+ in COMPLEX at (32.40, 12.97, -1.73).
+Placed Cl- in COMPLEX at (14.19, -0.95, 22.04).
+0: Placed Na+ in COMPLEX at (-33.58, -38.76, -10.70).
+Placed Cl- in COMPLEX at (-20.04, 10.31, -36.88).
+0: Placed Na+ in COMPLEX at (6.74, -12.44, 28.05).
+Placed Cl- in COMPLEX at (-32.65, 37.95, 9.33).
+Checking 'COMPLEX'....
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 0.943770 angstroms between .R<SER 350>.A<HG 9> and .R<HIE 339>.A<HE2 13>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.362763 angstroms between .R<THR 342>.A<HG1 12> and .R<TRP 58>.A<HE1 12>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.022464 angstroms between .R<THR 39>.A<HG1 12> and .R<ILE 11>.A<H 2>
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+Close contact of 1.490445 angstroms between .R<FAD 385>.A<H61A 66> and .R<FAD 385>.A<H62A 65>
+Checking parameters for unit 'COMPLEX'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 50191
+Unit is OK.
+Total unperturbed charge:  -0.002000
+Total perturbed charge:    -0.002000
+Checking Unit.
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Note.
+Ignoring the warnings from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1178 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CLYS	1
+	FAD	1
+	LIG	1
+	NMET	1
+  )
+ (no restraints)
+Writing pdb file: complex_solvated.pdb
+   printing CRYST1 record to PDB file with box info
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NMET -> MET
+
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CLYS -> LYS
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 18; Notes = 1.
+
+  Checking tleap output...
+  ✓ complex.prmtop
+  ✓ complex.inpcrd
+  ✓ complex_solvated.pdb
+
+  System summary from tleap.log:
+Loading library: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/dat/leap/lib/solvents.lib
+8 Na+ ions required to neutralize.
+Adding 8 counter ions to "COMPLEX". 16819 solvent molecules will remain.
+0: Placed Na+ in COMPLEX at (9.76, -20.52, 23.09).
+0: Placed Na+ in COMPLEX at (-11.51, -16.29, -26.52).
+0: Placed Na+ in COMPLEX at (32.56, 6.82, -18.50).
+0: Placed Na+ in COMPLEX at (-27.41, 5.37, -16.39).
+0: Placed Na+ in COMPLEX at (-2.30, -5.40, 28.63).
+0: Placed Na+ in COMPLEX at (34.91, 1.11, -37.37).
+0: Placed Na+ in COMPLEX at (-3.77, -19.44, -28.11).
+0: Placed Na+ in COMPLEX at (37.54, 38.36, -38.31).
+Adding 90 counter ions to "COMPLEX". 16729 solvent molecules will remain.
+0: Placed Na+ in COMPLEX at (39.59, 11.15, 4.86).
+Placed Cl- in COMPLEX at (16.31, 30.33, -12.13).
+0: Placed Na+ in COMPLEX at (2.42, 16.16, 36.27).
+Placed Cl- in COMPLEX at (-5.09, 34.95, -3.16).
+0: Placed Na+ in COMPLEX at (-15.65, -15.32, -37.85).
+Placed Cl- in COMPLEX at (-1.69, -36.56, 31.77).
+0: Placed Na+ in COMPLEX at (17.89, 23.93, -29.98).
+Placed Cl- in COMPLEX at (45.20, -10.01, 10.25).
+
+  [!] tleap reported warnings/errors -- review tleap.log before proceeding.
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+check:  Warnings: 1
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+check:  Warnings: 2
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+check:  Warnings: 4
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+check:  Warnings: 5
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+
+══════════════════════════════════════════════════
+  Converting AMBER topology -> GROMACS (parmed)
+══════════════════════════════════════════════════
+/LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/lib/python2.7/site-packages/ParmEd-3.2.0-py2.7-linux-x86_64.egg/parmed/utils/netcdf.py:770: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if typecode is not 'c':
+  Loading AMBER topology + coordinates...
+  Writing gromacs/complex.top ...
+  Writing gromacs/complex.gro ...
+  Done.
+  ✓ gromacs/complex.gro
+  ✓ gromacs/complex.top
+
+  Writing posres_setup.py ...
+  ✓ posres_setup.py written.
+
+  Setting up position restraints (k=1000 kJ/mol/nm^2)...
+Molecule types     : ['system1', 'FAD', 'LIG', 'Na+', 'Cl-', 'WAT']
+System composition : [('system1', 1), ('FAD', 1), ('LIG', 1), ('Na+', 9), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('Na+', 1), ('Cl-', 1), ('WAT', 16729)]
+  Generated gromacs/posre_system1.itp  (2858 heavy atoms, FC=1000.0)
+  Generated gromacs/posre_FAD.itp  (53 heavy atoms, FC=1000.0)
+  Generated gromacs/posre_LIG.itp  (10 heavy atoms, FC=1000.0)
+
+  Topology patched for: ['system1', 'FAD', 'LIG']
+  Use 'define = -DPOSRES' in MDP files to activate restraints.
+
+Done. FC = 1000.0 kJ/mol/nm^2
+
+  Generating GROMACS index file...
+MPI startup(): FI_PSM3_UUID was not generated, please set it to avoid possible resources ownership conflicts between MPI processes
+                     :-) GROMACS - gmx make_ndx, 2024.3 (-:
+
+Executable:   /LUSTRE/yoltla/programas/gromacs/2024.3/deps/linux-centos7-ivybridge/gcc-10.4.0/gromacs-2024.3-2am37nnnh4f2sjhvvdnmidv7geniqvfs/bin/gmx_mpi
+Data prefix:  /LUSTRE/yoltla/programas/gromacs/2024.3/deps/linux-centos7-ivybridge/gcc-10.4.0/gromacs-2024.3-2am37nnnh4f2sjhvvdnmidv7geniqvfs
+Working dir:  /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2
+Command line:
+  gmx_mpi make_ndx -f gromacs/complex.gro -o gromacs/index.ndx
+
+
+Reading structure file
+Going to read 0 old index file(s)
+Analysing residue names:
+There are:   384    Protein residues
+There are:   100      Other residues
+There are: 16729      Water residues
+Analysing Protein...
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+  0 System              : 72826 atoms
+  1 Protein             :  5712 atoms
+  2 Protein-H           :  2858 atoms
+  3 C-alpha             :   384 atoms
+  4 Backbone            :  1152 atoms
+  5 MainChain           :  1537 atoms
+  6 MainChain+Cb        :  1875 atoms
+  7 MainChain+H         :  1903 atoms
+  8 SideChain           :  3809 atoms
+  9 SideChain-H         :  1321 atoms
+ 10 Prot-Masses         :  5712 atoms
+ 11 non-Protein         : 67114 atoms
+ 12 Other               :   198 atoms
+ 13 FAD                 :    84 atoms
+ 14 LIG                 :    16 atoms
+ 15 Na+                 :    53 atoms
+ 16 Cl-                 :    45 atoms
+ 17 Water               : 66916 atoms
+ 18 SOL                 : 66916 atoms
+ 19 non-Water           :  5910 atoms
+
+ nr : group      '!': not  'name' nr name   'splitch' nr    Enter: list groups
+ 'a': atom       '&': and  'del' nr         'splitres' nr   'l': list residues
+ 't': atom type  '|': or   'keep' nr        'splitat' nr    'h': help
+ 'r': residue              'res' nr         'chain' char
+ "name": group             'case': case sensitive           'q': save and quit
+ 'ri': residue index
+
+> 
+
+GROMACS reminds you: "Teemu [Murtola] keeps beating our code, but that's fine because he's always right." (Berk Hess)
+
+  ✓ gromacs/index.ndx
+
+══════════════════════════════════════════════════
+  Step 05 complete.
+
+  AMBER files (checkpoint):
+    complex.prmtop
+    complex.inpcrd
+    complex_solvated.pdb
+
+  GROMACS files (for simulation):
+    gromacs/complex.gro    <- coordinates
+    gromacs/complex.top    <- topology (patched for POSRES)
+    gromacs/index.ndx      <- index file
+    gromacs/posre_*.itp    <- restraints (k=1000 kJ/mol/nm^2)
+    posres_setup.py        <- rerun with new k to update restraints
+
+  NEXT: sbatch 06_minimize.sh
+══════════════════════════════════════════════════

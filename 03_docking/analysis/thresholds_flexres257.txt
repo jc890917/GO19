@@ -1,0 +1,42 @@
+Receptor : go19_receptor_fixed.pdb   FAD N5 = -2.857 1.645 4.710
+Ligand   : glifosato_m2.sdf (net -2)
+
+THRESHOLD SCAN - number of poses (out of 20) with reacting C within X A of FAD N5
+seed    <4.0  <4.5  <5.0  <5.5  <6.0    best  rank     CNN  RMSDref
+42         0     0     0     0     0    6.63    11  0.3158     5.69
+43         0     0     0     0     0    6.58    10  0.3164     5.61
+101        1     1     1     1     1    3.73     1  0.9255     2.41
+102        1     1     1     1     1    3.48     1  0.8674     0.00
+202        1     1     1     1     1    3.41     1  0.7943     1.86
+203        0     0     1     1     1    4.95    17  0.2072     3.85
+303        1     1     1     1     1    3.49     1  0.9079     1.60
+304        0     0     0     0     0    6.55     2  0.5126     5.47
+404        1     1     1     2     2    3.64     1  0.8427     1.56
+405        1     1     1     2     2    3.51     1  0.7519     2.26
+
+CATALYTIC-ORIENTATION POSES (carboxylate O within 3.5 A of R272/R314/Y257 side chain)
+seed   pose   C-N5     CNN  RMSDref  anchors
+42       19   8.93  0.2337     5.92  ARG272:NH2
+101       1   3.73  0.9255     2.41  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+102       1   3.48  0.8674     0.00  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+202       1   3.41  0.7943     1.86  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+203       2   9.50  0.5171     5.24  ARG272:NE,ARG272:NH2
+203      17   4.95  0.2072     3.85  ARG272:NH2
+303       1   3.49  0.9079     1.60  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+404       1   3.64  0.8427     1.56  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+404      19   9.69  0.2748     4.44  ARG272:NE,ARG272:NH2
+404      20   5.42  0.2726     4.12  ARG272:NH2
+405       1   3.51  0.7519     2.26  ARG272:NH2,ARG314:NE,ARG314:NH2,TYR257:OH
+405      13   5.26  0.2581     4.01  ARG272:NH2
+
+WHERE DOES THE PHOSPHONATE SIT? (residues within 3.5 A of any phosphonate O, rank-1 poses)
+  seed42 pose1 (CNN 0.5516, C-N5 9.03): ASN51
+  seed43 pose1 (CNN 0.5438, C-N5 8.92): GLN91,SER251,THR50
+  seed101 pose1 (CNN 0.9255, C-N5 3.73): ARG272
+  seed102 pose1 (CNN 0.8674, C-N5 3.48): none
+  seed202 pose1 (CNN 0.7943, C-N5 3.41): none
+  seed203 pose1 (CNN 0.5462, C-N5 8.90): GLN91,SER251,THR50
+  seed303 pose1 (CNN 0.9079, C-N5 3.49): ARG272
+  seed304 pose1 (CNN 0.5691, C-N5 9.06): ASN51
+  seed404 pose1 (CNN 0.8427, C-N5 3.64): none
+  seed405 pose1 (CNN 0.7519, C-N5 3.51): FAD1,PRO341

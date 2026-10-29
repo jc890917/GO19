@@ -1,0 +1,3 @@
+fase,n_frames,rmsd_mean_A,rmsd_sd_A,rmsd_min_A,rmsd_max_A
+full_trajectory,10001,2.526,0.726,0.0,5.569
+equilibrated (>= 20.0 ns),8001,2.509,0.669,0.867,4.494

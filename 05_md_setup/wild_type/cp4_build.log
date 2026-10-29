@@ -1,0 +1,61 @@
+──────────────────────────────────────────────────────────────────
+ 0. inputs
+──────────────────────────────────────────────────────────────────
+  original build : /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19
+  new ligand     : /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/cp4_build/LIG.mol2
+  ligand frcmod  : /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/cp4_build/LIG.frcmod
+  destination    : /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2
+
+──────────────────────────────────────────────────────────────────
+ 1. modules, and proof the tools run
+──────────────────────────────────────────────────────────────────
+  ✓ tleap        /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/tleap
+  ✓ parmchk2     /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/parmchk2
+  ✓ antechamber  /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/antechamber
+  ✓ parmed importable
+
+──────────────────────────────────────────────────────────────────
+ 2. verify the new ligand BEFORE building
+──────────────────────────────────────────────────────────────────
+  atoms: 16   charge sum: -1.9990
+  H bonded to N: 2 (need 2)   H bonded to O: 0 (need 0)
+  >>> protonation correct: ammonium, carboxylate, phosphonate dianion
+
+──────────────────────────────────────────────────────────────────
+ 3. assemble the build folder
+──────────────────────────────────────────────────────────────────
+  ✓ folder assembled, config.sh and 06/07 paths patched
+
+──────────────────────────────────────────────────────────────────
+ 4. tleap + parmed (05_build_system.sh)
+──────────────────────────────────────────────────────────────────
+  ✓ system built: 72826 atoms
+    final /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2/tleap.log:Total unperturbed charge:  -0.002000
+    leap: Exiting LEaP: Errors = 0; Warnings = 0; Notes = 0.
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: check:  Warnings: 1
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: check:  Warnings: 2
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+    leap: /LUSTRE/yoltla/programas/amber/ambertools19_INTEL-parallel_studio_xe_2017_update4_IMPI/amber18/bin/teLeap: Warning!
+
+──────────────────────────────────────────────────────────────────
+ 5. Solute index group + trajectory-size fix
+──────────────────────────────────────────────────────────────────
+  residue names present:
+    ALA ARG ASN ASP CYS Cl- FAD GLN GLU GLY HIE ILE LEU LIG LYS MET Na+ PHE PRO SER THR TRP TYR VAL WAT 
+  Solute group: 5865 atoms  (expected ~5,800 = protein + FAD + LIG)
+  ✓ index.ndx written with a Solute group
+  ✓ compressed-x-grps = Solute added to the production mdp
+
+──────────────────────────────────────────────────────────────────
+ DONE — nothing has been submitted.
+──────────────────────────────────────────────────────────────────
+ Built in: /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2
+ Before equilibrating, send me:
+   cp4_build.log   /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2/build.log   /LUSTRE/home/lancad/2026/l.100073/alumnos/ian/go19_v2/leap.log
+ I will check the charge, atom count, ion counts and the ligand's
+ position in the built system against the docked pose.

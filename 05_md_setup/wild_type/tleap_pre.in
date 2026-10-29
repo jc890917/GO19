@@ -1,0 +1,11 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.opc
+loadamberparams LIG.frcmod
+LIG = loadmol2 LIG.mol2
+loadamberparams FAD.frcmod
+FAD = loadmol2 FAD_bcc.mol2
+PROT = loadpdb protein_clean.pdb
+COMPLEX = combine { PROT FAD LIG }
+solvateBox COMPLEX OPCBOX 12.0
+quit

@@ -1,0 +1,40 @@
+              _             
+             (_)            
+   __ _ _ __  _ _ __   __ _ 
+  / _` | '_ \| | '_ \ / _` |
+ | (_| | | | | | | | | (_| |
+  \__, |_| |_|_|_| |_|\__,_|
+   __/ |                    
+  |___/                     
+
+gnina v1.3.2 master:f23dd2b   Built Jul  8 2025.
+gnina is based on smina and AutoDock Vina.
+Please cite appropriately.
+
+Commandline: gnina --receptor go19_receptor_fixed.pdb --ligand glifosato_m2.sdf --center_x -2.857 --center_y 1.645 --center_z 4.71 --size_x 20 --size_y 20 --size_z 20 --flexres A:257 --out poses_seed304.sdf --out_flex flex_seed304.pdb --log log_seed304.txt --exhaustiveness 32 --num_modes 20 --seed 304 --cnn_scoring rescore
+Flexible residues: A:257
+Using random seed: 304
+
+mode |  affinity  |  intramol  |    CNN     |   CNN
+     | (kcal/mol) | (kcal/mol) | pose score | affinity
+-----+------------+------------+------------+----------
+    1       -4.53       -2.65       0.5691      4.052
+    2       -4.25       -2.61       0.5126      3.542
+    3       -5.04       -2.63       0.5124      3.379
+    4       -3.97       -2.63       0.4328      3.233
+    5       -4.18       -2.61       0.4042      3.223
+    6       -4.42       -2.66       0.3848      3.424
+    7       -4.57       -2.60       0.3704      3.130
+    8       -4.33       -2.62       0.3542      3.419
+    9       -4.99       -2.60       0.3538      3.181
+   10       -4.74       -2.61       0.3426      3.132
+   11       -4.99       -2.71       0.3019      3.483
+   12       -5.07       -2.68       0.2893      3.302
+   13       -5.04       -2.81       0.2886      3.257
+   14       -4.36       -2.61       0.2665      3.505
+   15       -3.95       -2.68       0.2490      3.150
+   16       -4.10       -2.63       0.2442      3.159
+   17       -4.09       -2.65       0.2269      2.918
+   18       -4.39       -2.69       0.2241      3.333
+   19       -4.44       -2.65       0.2145      2.858
+   20       -3.94       -2.61       0.2117      3.241

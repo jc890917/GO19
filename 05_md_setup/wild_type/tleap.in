@@ -1,0 +1,38 @@
+# ============================================================
+#  tleap.in -- System builder
+#  Protein: ff19SB | Small molecules: GAFF2 | Water: OPC
+# ============================================================
+
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.opc
+
+loadamberparams LIG.frcmod
+LIG = loadmol2 LIG.mol2
+check LIG
+
+loadamberparams FAD.frcmod
+FAD = loadmol2 FAD_bcc.mol2
+check FAD
+
+PROT = loadpdb protein_clean.pdb
+check PROT
+
+COMPLEX = combine { PROT FAD LIG }
+check COMPLEX
+charge COMPLEX
+
+solvateBox COMPLEX OPCBOX 12.0
+
+# Step 1: neutralize (Na+ only, count=0 = auto)
+# Step 2: add 45 NaCl pairs for 0.15 M
+#         = round(0.15 * 16827 waters / 55.5)
+addIonsRand COMPLEX Na+ 0
+addIonsRand COMPLEX Na+ 45 Cl- 45
+
+check COMPLEX
+charge COMPLEX
+saveamberparm COMPLEX complex.prmtop complex.inpcrd
+savepdb COMPLEX complex_solvated.pdb
+
+quit

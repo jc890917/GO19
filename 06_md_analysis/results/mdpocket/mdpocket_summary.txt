@@ -1,0 +1,7 @@
+system       V≥50% ≤8Å  V≥80% ≤8Å  connected ≥80% V  reach Å  lining residues (≥80% cavity, ≤3.5 Å)
+WT                 603        111                91      6.6  ILE45 SER47 THR50 ASN51 SER52 ARG53 TRP58 GLN91 SER251 PHE253 THR345
+R53A               600        188               183      6.7  ILE45 SER47 PRO48 THR50 ASN51 SER52 ALA53 TRP58 GLN91 VAL93 SER251 PHE253 PRO341 THR345
+R272L              594        212               177      9.2  ILE45 SER47 THR50 ASN51 SER52 ARG53 TRP58 GLN91 ALA107 SER251 ALA252 PHE253 PRO341 THR342 THR345
+R53A/R272L         527        140               140      7.5  ILE45 SER47 PRO48 THR50 ASN51 TRP58 GLN91 VAL93 SER251 ALA252 PHE253 PRO341 THR342 THR345
+
+Volumes in Å³ (grid voxel = 1.00 Å³). "reach" = farthest point of the persistent cavity connected to glyphosate, measured from the nearest ligand atom.

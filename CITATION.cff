@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use these data or scripts, please cite the article below."
+title: "GO19 glyphosate oxidoreductase: structural and evolutionary analysis — data and scripts"
+authors:
+  - family-names: Angel-Lerma
+    given-names: Lidia Esmeralda
+    affiliation: "Facultad de Ciencias Químicas, Universidad Autónoma de Chihuahua"
+  - family-names: Contreras-Montoya
+    given-names: Efrain
+    affiliation: "Universidad Politécnica de Gómez Palacio"
+  - family-names: González-Escobedo
+    given-names: Román
+    affiliation: "Facultad de Zootecnia y Ecología, Universidad Autónoma de Chihuahua"
+  - family-names: Moncayo-Luján
+    given-names: Rosario
+    affiliation: "Universidad Politécnica de Gómez Palacio"
+  - family-names: Barraza-Guerrero
+    given-names: Sergio Iván
+    affiliation: "Universidad Autónoma Agraria Antonio Narro"
+  - family-names: Carrillo-Campos
+    given-names: Javier
+    affiliation: "Facultad de Zootecnia y Ecología, Universidad Autónoma de Chihuahua"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Structural and evolutionary basis of glyphosate specificity in a naturally occurring glyphosate oxidoreductase"
+  journal: "Frontiers in Chemical Biology"
+  volume: 5
+  year: 2026
+  doi: "10.3389/fchbi.2026.1996804"
+  authors:
+    - family-names: Angel-Lerma
+      given-names: Lidia Esmeralda
+    - family-names: Contreras-Montoya
+      given-names: Efrain
+    - family-names: González-Escobedo
+      given-names: Román
+    - family-names: Moncayo-Luján
+      given-names: Rosario
+    - family-names: Barraza-Guerrero
+      given-names: Sergio Iván
+    - family-names: Carrillo-Campos
+      given-names: Javier
